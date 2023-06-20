@@ -23,8 +23,9 @@
 }
 
 header {
+    position: sticky;
     text-align: left;
-    box-shadow: 0px 2px purple;
+    /* box-shadow: 0px 2px purple; */
     font-size: 2em;
     display: flex;
     justify-content: space-between;
@@ -35,21 +36,21 @@ header>div>p {
     color: red;
 }
 
-button {
+.buttonHeader {
     border: none;
     border-radius: 50%;
     height: 50px;
     width: 50px;
 }
 
-button:hover {
+.buttonHeader:hover {
     border-radius: 50%;
     background-color: var(--hoverButtonBackgroundColor);
     height: 50px;
     width: 50px;
 }
 
-button:active {
+.buttonHeader:active {
     border: 2px solid var(--clickButtonBorderColor);
     border-radius: 50%;
     background-color: var(--clickButtonBackgroundColor);
@@ -58,6 +59,7 @@ button:active {
 }
 
 .menu {
+    margin-left: 5px;
     display: flex;
     align-items: flex-start;
 }
@@ -129,10 +131,66 @@ input[type="submit"] {
 .profile {
     display: flex;
     align-items: center;
+    margin-right: 5px;
 }
 
-button > img {
+.buttonHeader > img {
     margin: 0px;
     width: 25px;
     background-color: transparent;
+}
+
+main{
+
+}
+
+aside{
+    background-color: red;
+    height: 100%;
+    width: 13%;
+    position: sticky;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px purple;
+    margin-right: 10px;
+}
+
+.buttonNav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: .8em;
+}
+
+.buttonNav:hover {
+    background-color: var(--hoverButtonBackgroundColor);
+}
+
+.buttonNav:active {
+    background-color: var(--clickButtonBackgroundColor);
+}
+
+.buttonNav > img{
+    margin-right: 15px;
+    margin-top: -25px;
+    width: 25px;
+    background-color: transparent;
+}
+
+.general{
+    padding-bottom: 10px;
+    box-shadow: 0px 2px purple;
+    margin-left: 10px;
+}
+
+.specific{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
