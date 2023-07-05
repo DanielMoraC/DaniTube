@@ -296,3 +296,42 @@ main{
     text-overflow: ellipsis;
     background-color: transparent;
 }
+
+.videos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video{
+    /* width: 400px; */
+    margin-top: 10px;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+
+.video > .thumbnail{
+    width: 400px;
+    margin: 0px;
+}
+
+.video > .videoTittle{
+    width: 400px;
+    max-height: 2rem;
+    line-height: 1rem;
+    white-space: normal;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.video > .channelName{
+    font-size: .7em;
+}
+
+.video > .videoInfo{
+    font-size: .5em;
+}
