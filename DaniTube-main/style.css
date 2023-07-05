@@ -1,0 +1,337 @@
+:root {
+    --mainBackgroundColor: #0f0f0f;
+    --hoverButtonBackgroundColor: #3f3f3f;
+    --clickButtonBorderColor: #5c5c5c;
+    --clickButtonBackgroundColor: #4e4e4e;
+    --selectedButtonBackgroundColor: #272727;
+    --selectedHoverButtonBackgroundColor: #3d3d3d;
+    --searchBarBorderColor: #3d3d3d;
+    --searchBarFocusBorderColor: #1C62B9;
+    --searchBarLoupeBackgroudColor: #272727;
+    --mainTextColor: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Cascadia Code, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    color: var(--mainTextColor);
+    background-color: var(--mainBackgroundColor);
+    font-size: 25px;
+}
+
+header {
+    position: fixed;
+    text-align: left;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 6%;
+    width: 99.5%;
+}
+
+.buttonHeader {
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.buttonHeader:hover {
+    border-radius: 50%;
+    background-color: var(--hoverButtonBackgroundColor);
+    height: 50px;
+    width: 50px;
+}
+
+.buttonHeader:active {
+    border: 2px solid var(--clickButtonBorderColor);
+    border-radius: 50%;
+    background-color: var(--clickButtonBackgroundColor);
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    margin-left: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+img {
+    padding-top: 10%;
+    margin-left: 7px;
+    width: 160px;
+}
+
+a > img {
+    margin-top: -2%;
+    margin-left: 7px;
+    width: 160px;
+}
+
+.searchBar {
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    width: 700px;
+}
+
+form>div {
+    background-color: transparent;
+    flex: 1 1 auto;
+}
+
+input {
+    border: none;
+}
+
+.search {
+    border-radius: 50px 0% 0% 50px;
+    border: 1px solid var(--searchBarBorderColor);
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+input[type="search"] {
+    font-size: 1em;
+    margin-left: 20px;
+    height: 70%;
+    width: 100%;
+}
+
+input[type="search"]:focus {
+    margin-left: 20px;
+    margin-right: 0px;
+    outline: none;
+}
+
+.loupe {
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid var(--searchBarBorderColor);
+    background-color: var(--searchBarLoupeBackgroudColor);
+}
+
+input[type="submit"] {
+    padding: 2px 10px;
+    border-radius: 0px 50px 50px 0px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.buttonHeader > img {
+    margin: 0px;
+    width: 25px;
+    background-color: transparent;
+}
+
+aside{
+    height: 94%;
+    width: 13%;
+    position: fixed;
+    margin-top: 60px;
+    padding-right: 10px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px var(--hoverButtonBackgroundColor);
+    width: 100%;
+}
+
+.buttonNav{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.buttonNav:hover {
+    background-color: var(--hoverButtonBackgroundColor);
+}
+
+.buttonNav:active {
+    background-color: var(--clickButtonBackgroundColor);
+}
+
+.buttonNav > p{
+    font-size: .8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+}
+
+.buttonNav > img{
+    margin-right: 15px;
+    margin-top: -20px;
+    width: 25px;
+    background-color: transparent;
+}
+
+.general{
+    padding-bottom: 10px;
+    box-shadow: 0px 2px var(--hoverButtonBackgroundColor);
+    margin-left: 10px;
+    width: 100%;
+}
+
+.specific{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.suscriptions{
+    margin-top: 10px;
+    padding-bottom: 2px;
+    box-shadow: 0px 2px var(--hoverButtonBackgroundColor);
+}
+
+.suscriptions > h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.suscriptions > button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.explore{
+    margin-top: 10px;
+    padding-bottom: 2px;
+    box-shadow: 0px 2px var(--hoverButtonBackgroundColor);
+}
+
+.explore > h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.explore > button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.more{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px var(--hoverButtonBackgroundColor);
+}
+
+.more > button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.info{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info > h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.info > p{
+    font-size: 0.6em;
+    margin-left: 10px;
+}
+
+main{
+    display: flex;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 65px;
+    width: 85%;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.buttonOptions{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--hoverButtonBackgroundColor);
+    margin-right: 10px;
+}
+
+.buttonOptions:hover {
+    background-color: var(--clickButtonBackgroundColor);
+}
+
+.buttonOptions > p{
+    font-size: .8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: transparent;
+}
+
+.videos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video{
+    /* width: 400px; */
+    margin-top: 10px;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+
+.video > .thumbnail{
+    width: 400px;
+    margin: 0px;
+}
+
+.video > .videoTittle{
+    width: 400px;
+    max-height: 2rem;
+    line-height: 1rem;
+    white-space: normal;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.video > .channelName{
+    font-size: .7em;
+}
+
+.video > .videoInfo{
+    font-size: .5em;
+}
